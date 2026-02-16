@@ -29,14 +29,6 @@ jobs:
           publish_dir: docs
           personal_token: ${{ secrets.ZAER_TOKEN }}
 
-      - name: Deploy zaerWindows to zaerAI/zaerWindows
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          external_repository: zaerAI/zaerWindows
-          publish_branch: main
-          publish_dir: zaerWindows
-          personal_token: ${{ secrets.ZAER_TOKEN }}
-
       - name: Deploy zaerBackend to zaer/zaerBackend
         uses: peaceiris/actions-gh-pages@v4
         with:
