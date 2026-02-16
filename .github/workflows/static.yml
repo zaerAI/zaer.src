@@ -1,0 +1,46 @@
+name: Deploy ZAER Sites
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source repo
+        uses: actions/checkout@v4
+
+      - name: Deploy ZAER public to zaerAI/chat
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          external_repository: zaerAI/chat
+          publish_branch: main
+          publish_dir: ZAER/public
+          personal_token: ${{ secrets.ZAER_TOKEN }}
+
+      - name: Deploy docs to zaerAI/zaerAI.github.io
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          external_repository: zaerAI/zaerAI.github.io
+          publish_branch: main
+          publish_dir: docs
+          personal_token: ${{ secrets.ZAER_TOKEN }}
+
+      - name: Deploy zaerWindows to zaerAI/zaerWindows
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          external_repository: zaerAI/zaerWindows
+          publish_branch: main
+          publish_dir: zaerWindows
+          personal_token: ${{ secrets.ZAER_TOKEN }}
+
+      - name: Deploy zaerBackend to zaer/zaerBackend
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          external_repository: zaer/zaerBackend
+          publish_branch: main
+          publish_dir: zaerBackend
+          personal_token: ${{ secrets.ZAER_TOKEN }}

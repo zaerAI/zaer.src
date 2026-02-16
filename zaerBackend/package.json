@@ -1,0 +1,9 @@
+{
+  "name": "ZAER [Backend]",
+  "version": "1.0.0",
+  "type": "module",
+  
+  "dependencies": {
+    "lru-cache": "^10.0.0"
+  }
+}

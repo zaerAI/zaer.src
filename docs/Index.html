@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1200, initial-scale=1.0, user-scalable=no">
+    <title>ZAER</title>
+    <style>
+        @font-face {
+            font-family: "Gontserrat";
+            src: url('../ZAER/public/assets/fonts/Gontserrat-Regular.ttf');
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Gontserrat', Arial, sans-serif;
+            background: #f8f9fa;
+            padding: 40px 0;
+            width: 1200px;
+            margin: 0 auto;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        .header-section {
+            text-align: center;
+            margin-bottom: 50px;
+            padding: 40px 30px;
+            background: white;
+            border-radius: 8px;
+        }
+
+        .logo {
+            width: 500px;
+            height: auto;
+            margin: 0 auto 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .logo img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .header-section h1 {
+            margin-bottom: 20px;
+            font-size: 36px;
+            font-weight: 700;
+            color: #1a1a1a;
+        }
+
+        .description {
+            margin-bottom: 30px;
+            line-height: 1.8;
+            font-size: 18px;
+            color: #555;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .links {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: nowrap;
+        }
+
+        .links a {
+            padding: 12px 28px;
+            background: #000;
+            color: white;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            font-size: 15px;
+            font-weight: 600;
+            transition: all 0.3s;
+            border-radius: 0;
+        }
+
+        .links a:hover {
+            background: #333;
+            color: white;
+        }
+
+        .intro-section {
+            text-align: center;
+            margin-bottom: 30px;
+            transform: translateY(60%);
+            font-size: 100px;
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+
+        .video-wrapper {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .video-container {
+            position: relative;
+            width: 1000px;
+            height: 562.5px;
+            background: white;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 1000px;
+            height: 562.5px;
+            border: none;
+        }
+
+        .watch-intro {
+            position: absolute;
+            bottom: -60px;
+            left: 25%;
+            transform: translateX(-50%);
+            font-size: 96px;
+            font-weight: 600;
+            color: #1a1a1a;
+            white-space: nowrap;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header-section">
+            <div class="logo"><img src='../ZAER/public/assets/images/logoBlack.png'></div>
+            <p class="description">
+                An advanced AI-powered chat assistant designed to help you with code, ideas, and creative solutions.
+            </p>
+            <div class="links">
+                <a href="https://zaerAI.github.io/chat">Chat!</a>
+                <a href="https://github.com/zaerAI/zaer.src">Source Code</a>
+                <a href="https://github.com/zaerAI/zaer.src/releases/latest/">Windows BUILD.</a>
+            </div>
+        </div>
+
+        <div class="intro-section">
+            WATCH THE INTRO
+        </div>
+
+        <div class="video-wrapper">
+            <div class="video-container">
+                <iframe 
+                    src="https://www.youtube.com/embed/ZqS5cVg6pVE" 
+                    allowfullscreen="" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</body>
+</htm
