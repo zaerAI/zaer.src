@@ -40,7 +40,7 @@ jobs:
       - name: Deploy zaerBackend to zaer/zaerBackend
         uses: peaceiris/actions-gh-pages@v4
         with:
-          external_repository: zaer/zaerBackend
+          external_repository: zaerAI/zaerBackend
           publish_branch: main
           publish_dir: zaerBackend
           personal_token: ${{ secrets.ZAER_TOKEN }}
